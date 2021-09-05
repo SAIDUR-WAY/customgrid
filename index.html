@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom grid</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <div class="grid">
+        <div class="row">
+            <div class="col col-1-2">col-1-2</div>
+            <div class="col col-1-2">col-1-2</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-3">coll-1-3</div>
+            <div class="col col-1-3">coll-1-3</div>
+            <div class="col col-1-3">coll-1-3</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-3">col-1-3</div>
+            <div class="col col-2-3">col-2-3</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-4">col-1-4</div>
+            <div class="col col-1-4">col-1-4</div>
+            <div class="col col-1-4">col-1-4</div>
+            <div class="col col-1-4">col-1-4</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-4">col-1-4</div>
+            <div class="col col-1-4">col-1-4</div>
+            <div class="col col-2-4">col-2-4</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-4">col-1-4</div>
+            <div class="col col-3-4">col-3-4</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-2-5">col-2-5</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-3-5">col-3-5</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-5">col-1-5</div>
+            <div class="col col-4-5">col-4-5</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-2-6">col-2-6</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-3-6">col-3-6</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-4-6">col-4-6</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-6">col-1-6</div>
+            <div class="col col-5-6">col-5-6</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-2-7">col-2-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-3-7">col-3-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-4-7">col-4-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-5-7">col-5-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-7">col-1-7</div>
+            <div class="col col-6-7">col-6-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-2-8">col-2-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-3-8">col-3-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-4-8">col-4-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-5-8">col-5-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-6-8">col-6-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-8">col-1-8</div>
+            <div class="col col-7-8">col-7-8</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-2-9">col-2-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-3-9">col-3-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-4-9">col-4-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-5-9">col-5-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-6-9">col-6-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-7-9">col-7-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-9">col-1-9</div>
+            <div class="col col-8-9">col-8-9</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-2-10">col-2-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-3-10">col-3-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-4-10">col-4-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-5-10">col-5-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-6-10">col-6-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-7-10">col-7-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-8-10">col-8-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-10">col-1-10</div>
+            <div class="col col-9-10">col-9-10</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-2-11">col-2-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-3-11">col-3-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-4-11">col-4-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-5-11">col-5-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-6-11">col-6-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-7-11">col-7-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-8-11">col-8-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-9-11">col-9-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-11">col-1-11</div>
+            <div class="col col-10-11">col-10-11</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-2-12">col-2-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-3-12">col-3-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-4-12">col-4-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-5-12">col-5-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-6-12">col-6-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-7-12">col-10-7</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-8-12">col-8-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-9-12">col-9-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-10-12">col-10-12</div>
+        </div>
+        <div class="row">
+            <div class="col col-1-12">col-1-12</div>
+            <div class="col col-11-12">col-11-12</div>
+        </div>
+    </div> -->
+
+ <!-- start header -->
+    <header class="header">
+        <div class="container">
+            <div class="header_color row">
+                <div class="col col-1-2">
+                    <div class="composition">
+                       <a href="#"> <img src="img/logo.svg" alt="logo" class="composition__photo composition__photo--p1"></a>
+                  </div>
+                </div>
+                <div class="col col-1-2">
+                    <div class="menu">
+                        <div class="menu_item">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+     <!-- start help section -->
+    <section class="help">
+        <div class=" help_content row">
+            <div class="col col-1-2">
+               <div class="help_items">
+                    <div class="help_item">
+                        <h2>You need a powerful online presence and we’re just the team to harness it
+                        </h2>
+                    </div>
+                    <div class="btn btn_full">
+                    <a href="#">How We can help</a>
+                    </div>
+               </div>
+            </div>
+            <div class="col col-1-2">
+                <div class="composition__photo composition__photo--p2">
+                    <img src="img/experience design.svg" alt="experience">
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- end help section -->
+    <!-- start team section -->
+
+    <section class="team">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col col-1-2">
+                   <div class="team_item">
+                        <img src="img/onboarding.svg" alt="onbording" class="composition__photo composition__photo--p3">
+                   </div>
+                </div>
+               
+                <div class="col col-1-2">
+                    <hr>
+                    <h3>We like to go above and far beyond</h3>
+                    <p>Vivamus integer suscipit taciti etiam at primis tempor sagittis euismod libero facilisi aptent elementum blandit cursus gravida sociis eleifend lectus nullam dapibus nultricies proin etus erat ante feugiat <br><br>
+
+                        Massa curae fringilla porttitor sollicitudin iaculis aptent gravida leo ligula euismod dictumst orci penatibus mauris eros etiam praesent erat volutpat posuere. Metus fringilla nec ullamcorper odio aliquam lacinia conubia.</p>
+                        <div class="btn btn_2">
+                            <a href="#">met our team</a>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end team section -->
+</body>
+</html>

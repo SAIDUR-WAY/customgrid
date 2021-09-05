@@ -1,0 +1,373 @@
+$backColor : #ddd;
+$gutterHorizantal : 80px;
+$gutterVirtical : 60px;
+$primaryWidth : 1290px;
+
+//mixins
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row {
+   
+    max-width: $primaryWidth;
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: $gutterHorizantal;
+    }
+    @include clearfix;
+
+    .col {
+        float: left;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: $gutterVirtical;
+        }
+    }
+    
+    .col-1-2 {
+        width: calc((100% - #{$gutterVirtical}) / 2);
+    }
+    .col-1-3 {
+        width: calc((100% - 2 * #{$gutterVirtical}) / 3);
+    }
+    .col-2-3 {
+        width: calc(2 * ((100% - 2 * #{$gutterVirtical}) / 3) + #{$gutterVirtical});
+    }
+    .col-1-4 {
+        width: calc((100% - 3 * #{$gutterVirtical}) / 4);
+    }    
+    .col-2-4 {
+        width: calc(2 * ((100% - 3 * #{$gutterVirtical}) / 4) + #{$gutterVirtical});
+    }    
+    .col-3-4 {
+        width: calc(3 * ((100% - 3 * #{$gutterVirtical}) / 4) +  2 * #{$gutterVirtical});
+    }
+    .col-1-5 {
+        width: calc((100% - 4 * #{$gutterVirtical}) / 5);
+    }
+    .col-2-5 {
+        width: calc(2 * ((100% - 4 * #{$gutterVirtical}) / 5) + #{$gutterVirtical});
+    }        
+    .col-3-5 {
+        width: calc(3 * ((100% - 4 * #{$gutterVirtical}) / 5) + 2 * #{$gutterVirtical});
+    }        
+    .col-4-5 {
+        width: calc(4 * ((100% - 4 * #{$gutterVirtical}) / 5) + 3 * #{$gutterVirtical});
+    }       
+    .col-1-6 {
+        width: calc((100% - 5 * #{$gutterVirtical}) / 6);
+    }
+    .col-2-6 {
+        width: calc(2 * ((100% - 5 * #{$gutterVirtical}) / 6) + #{$gutterVirtical});
+    }
+    .col-3-6 {
+        width: calc(3 * ((100% - 5 * #{$gutterVirtical}) / 6) + 2 * #{$gutterVirtical});
+    }       
+    .col-4-6 {
+        width: calc(4 * ((100% - 5 * #{$gutterVirtical}) / 6) + 3 * #{$gutterVirtical});
+    }       
+    .col-5-6 {
+        width: calc(5 * ((100% - 5 * #{$gutterVirtical}) / 6) + 4 * #{$gutterVirtical});
+    } 
+    .col-1-7 {
+        width: calc((100% - 6 * #{$gutterVirtical}) / 7);
+    }
+    .col-2-7 {
+        width: calc(2 * ((100% - 6 * #{$gutterVirtical}) / 7) + #{$gutterVirtical});
+    }
+    .col-3-7 {
+        width: calc(3 * ((100% - 6 * #{$gutterVirtical}) / 7) + 2 * #{$gutterVirtical});
+    }       
+    .col-4-7 {
+        width: calc(4 * ((100% - 6 * #{$gutterVirtical}) / 7) + 3 * #{$gutterVirtical});
+    }       
+    .col-5-7 {
+        width: calc(5 * ((100% - 6 * #{$gutterVirtical}) / 7) + 4 * #{$gutterVirtical});
+    }             
+    .col-6-7 {
+        width: calc(6 * ((100% - 6 * #{$gutterVirtical}) / 7) + 5 * #{$gutterVirtical});
+    }
+    .col-1-8 {
+        width: calc((100% - 7 * #{$gutterVirtical}) / 8);
+    }
+    .col-2-8 {
+        width: calc(2 * ((100% - 7 * #{$gutterVirtical}) / 8) + #{$gutterVirtical});
+    }
+    .col-3-8 {
+        width: calc(3 * ((100% - 7 * #{$gutterVirtical}) / 8) + 2 * #{$gutterVirtical});
+    }
+    .col-4-8 {
+        width: calc(4 * ((100% - 7 * #{$gutterVirtical}) / 8) + 3 * #{$gutterVirtical});
+    }
+    .col-5-8 {
+        width: calc(5 * ((100% - 7 * #{$gutterVirtical}) / 8) + 4 * #{$gutterVirtical});
+    }
+    .col-6-8 {
+        width: calc(6 * ((100% - 7 * #{$gutterVirtical}) / 8) + 5 * #{$gutterVirtical});
+    }
+    .col-7-8 {
+        width: calc(7 * ((100% - 7 * #{$gutterVirtical}) / 8) + 6 * #{$gutterVirtical});
+    }
+    .col-1-9 {
+        width: calc((100% - 8 * #{$gutterVirtical}) / 9);
+    }
+    .col-2-9 {
+        width: calc(2 * ((100% - 8 * #{$gutterVirtical}) / 9) + #{$gutterVirtical});
+    }
+    .col-3-9 {
+        width: calc(3 * ((100% - 8 * #{$gutterVirtical}) / 9) + 2 * #{$gutterVirtical});
+    }
+    .col-4-9 {
+        width: calc(4 * ((100% - 8 * #{$gutterVirtical}) / 9) + 3 * #{$gutterVirtical});
+    }
+    .col-5-9 {
+        width: calc(5 * ((100% - 8 * #{$gutterVirtical}) / 9) + 4 * #{$gutterVirtical});
+    }
+    .col-6-9 {
+        width: calc(6 * ((100% - 8 * #{$gutterVirtical}) / 9) + 5 * #{$gutterVirtical});
+    }
+    .col-7-9 {
+        width: calc(7 * ((100% - 8 * #{$gutterVirtical}) / 9) + 6 * #{$gutterVirtical});
+    }
+    .col-8-9 {
+        width: calc(8 * ((100% - 8 * #{$gutterVirtical}) / 9) + 7 * #{$gutterVirtical});
+    }
+    .col-1-10 {
+        width: calc((100% - 9 * #{$gutterVirtical}) / 10);
+    }
+    .col-2-10 {
+        width: calc(2 * ((100% - 9 * #{$gutterVirtical}) / 10) + #{$gutterVirtical});
+    }
+    .col-3-10 {
+        width: calc(3 * ((100% - 9 * #{$gutterVirtical}) / 10) + 2 * #{$gutterVirtical});
+    }
+    .col-4-10 {
+        width: calc(4 * ((100% - 9 * #{$gutterVirtical}) / 10) + 3 * #{$gutterVirtical});
+    }
+    .col-5-10 {
+        width: calc(5 * ((100% - 9 * #{$gutterVirtical}) / 10) + 4 * #{$gutterVirtical});
+    }
+    .col-6-10 {
+        width: calc(6 * ((100% - 9 * #{$gutterVirtical}) / 10) + 5 * #{$gutterVirtical});
+    }
+    .col-7-10 {
+        width: calc(7 * ((100% - 9 * #{$gutterVirtical}) / 10) + 6 * #{$gutterVirtical});
+    }
+    .col-8-10 {
+        width: calc(8 * ((100% - 9 * #{$gutterVirtical}) / 10) + 7 * #{$gutterVirtical});
+    }
+    .col-9-10 {
+        width: calc(9 * ((100% - 9 * #{$gutterVirtical}) / 10) + 8 * #{$gutterVirtical});
+    }
+    .col-1-11 {
+        width: calc((100% - 10 * #{$gutterVirtical}) / 11);
+    }
+    .col-2-11 {
+        width: calc(2 * ((100% - 10 * #{$gutterVirtical}) / 11) + #{$gutterVirtical});
+    }
+    .col-3-11 {
+        width: calc(3 * ((100% - 10 * #{$gutterVirtical}) / 11) + 2 * #{$gutterVirtical});
+    }
+    .col-4-11 {
+        width: calc(4 * ((100% - 10 * #{$gutterVirtical}) / 11) + 3 * #{$gutterVirtical});
+    }
+    .col-5-11 {
+        width: calc(5 * ((100% - 10 * #{$gutterVirtical}) / 11) + 4 * #{$gutterVirtical});
+    }
+    .col-6-11 {
+        width: calc(6 * ((100% - 10 * #{$gutterVirtical}) / 11) + 5 * #{$gutterVirtical});
+    }
+    .col-7-11 {
+        width: calc(7 * ((100% - 10 * #{$gutterVirtical}) / 11) + 6 * #{$gutterVirtical});
+    }
+    .col-8-11 {
+        width: calc(8 * ((100% - 10 * #{$gutterVirtical}) / 11) + 7 * #{$gutterVirtical});
+    }
+    .col-9-11 {
+        width: calc(9 * ((100% - 10 * #{$gutterVirtical}) / 11) + 8 * #{$gutterVirtical});
+    }
+
+    .col-10-11 {
+        width: calc(10 * ((100% - 10 * #{$gutterVirtical}) / 11) + 9 * #{$gutterVirtical});
+    }
+    .col-1-12 {
+        width: calc((100% - 11 * #{$gutterVirtical}) / 12);
+    }
+    .col-2-12 {
+        width: calc(2 * ((100% - 11 * #{$gutterVirtical}) / 12) + #{$gutterVirtical});
+    }
+    .col-3-12 {
+        width: calc(3 * ((100% - 11 * #{$gutterVirtical}) / 12) + 2 * #{$gutterVirtical});
+    }
+    .col-4-12 {
+        width: calc(4 * ((100% - 11 * #{$gutterVirtical}) / 12) + 3 * #{$gutterVirtical});
+    }
+    .col-5-12 {
+        width: calc(5 * ((100% - 11 * #{$gutterVirtical}) / 12) + 4 * #{$gutterVirtical});
+    }
+    .col-6-12 {
+        width: calc(6 * ((100% - 11 * #{$gutterVirtical}) / 12) + 5 * #{$gutterVirtical});
+    }
+    .col-7-12 {
+        width: calc(7 * ((100% - 11 * #{$gutterVirtical}) / 12) + 6 * #{$gutterVirtical});
+    }
+    .col-8-12 {
+        width: calc(8 * ((100% - 11 * #{$gutterVirtical}) / 12) + 7 * #{$gutterVirtical});
+    }
+    .col-9-12 {
+        width: calc(9 * ((100% - 11 * #{$gutterVirtical}) / 12) + 8 * #{$gutterVirtical});
+    }
+
+    .col-10-12 {
+        width: calc(10 * ((100% - 11 * #{$gutterVirtical}) / 12) + 9 * #{$gutterVirtical});
+    }
+    .col-11-12 {
+        width: calc(11 * ((100% - 11 * #{$gutterVirtical}) / 12) + 10 * #{$gutterVirtical});
+    }
+}
+
+//  common css
+body {
+    font-family: 'Roboto', sans-serif;
+    a{
+        text-decoration: none;
+        
+    }
+    li{
+        list-style-type: none;
+    }
+}
+.composition__photo {
+    max-width: 100%;
+}
+.btn {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 18px 40px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    text-transform:capitalize;
+   
+    a {
+        display: inline-block;
+        color: #fff;
+       
+
+    }
+
+   
+}
+
+
+// header section
+.composition {
+    height: 90px;
+    position: relative;
+
+    .composition__photo--p1 {
+        width: 50px;
+        height: 50px;
+        position:absolute;
+        left: 0;
+        top: 30px;
+    }
+    
+}
+
+.menu{
+    height: 90px;
+    position: relative;
+
+    .menu_item {
+        width: 230px;
+        position:absolute;
+        bottom: 18px;
+        right: 0;
+        text-align: right;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                padding: 8px 12px;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: #000;
+                font-size: 15px;
+                &:hover {
+                    color: #332cac;
+                }
+                &:last-child {
+                    padding: 8px 0 8px 12px;
+                }
+            }
+           
+        }
+    }
+   
+}
+
+// help section
+
+ .help_items {
+     .help_item {
+         margin-top: 80px;
+         h2 {
+            font-size: 38px;
+            font-weight: 400;
+            text-align:left;
+            line-height: 1.5;
+            font-style: inherit;
+            letter-spacing: 1px;
+         }
+         .btn_full {
+            float: left;
+            background-color: #975BE5;
+         }
+     }
+     .btn_full {
+        float: left;
+        background-color: #975BE5;
+        border-color:#975BE5;
+        transition: all .3s;
+        &:hover {
+            background-color: lighten(#975BE5,5%);
+        }
+     }
+     
+ }
+//  team section
+
+ .team {
+     margin-top: 80px;
+ }
+  hr {
+     border: 0;
+     padding: 0;
+     width:  60px;
+     height: 4px;
+     background-color: #A571E8;
+}
+.btn_2 {
+    background-color: #975BE5;
+    border-color:#975BE5;
+    transition: all .3s;
+    &:hover {   
+        background-color:darken(#975BE5,10%)
+    }
+
+}
+
+
+
